@@ -1,0 +1,4 @@
+../Core/Src/Peripherals/Usart/usart_comm.c:20:6:usart2_tx	16	static
+../Core/Src/Peripherals/Usart/usart_comm.c:43:6:usart3_tx	16	static
+../Core/Src/Peripherals/Usart/usart_comm.c:67:6:usart2_rx	8	static
+../Core/Src/Peripherals/Usart/usart_comm.c:83:6:usart3_rx	8	static

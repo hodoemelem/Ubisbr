@@ -1,0 +1,11 @@
+../Core/Src/Peripherals/I2C/i2c.c:35:6:i2c_init	8	static
+../Core/Src/Peripherals/I2C/i2c.c:44:6:i2c1_init	8	static
+../Core/Src/Peripherals/I2C/i2c.c:52:6:i2c1_reset	8	static
+../Core/Src/Peripherals/I2C/i2c.c:60:6:config_12c1_node	24	static
+../Core/Src/Peripherals/I2C/i2c.c:65:9:i2c1_start_ret	16	static
+../Core/Src/Peripherals/I2C/i2c.c:83:9:i2c1_stop_ret	8	static
+../Core/Src/Peripherals/I2C/i2c.c:97:9:check_i2c_cr2	24	static
+../Core/Src/Peripherals/I2C/i2c.c:129:9:check_i2c_isr	24	static
+../Core/Src/Peripherals/I2C/i2c.c:168:9:send_data	24	static
+../Core/Src/Peripherals/I2C/i2c.c:207:9:read_data	24	static
+../Core/Src/Peripherals/I2C/i2c.c:234:9:i2c1_read	16	static

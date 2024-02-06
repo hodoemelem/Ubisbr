@@ -1,0 +1,5 @@
+../Core/Src/Peripherals/Status/status_monitor.c:33:6:status_monitor_init	8	static
+../Core/Src/Peripherals/Status/status_monitor.c:37:6:status_monitor_lunch	16	static
+../Core/Src/Peripherals/Status/status_monitor.c:47:6:status_led	8	static
+../Core/Src/Peripherals/Status/status_monitor.c:54:6:status_monitor	16	static
+../Core/Src/Peripherals/Status/status_monitor.c:64:6:monitor_status	16	static

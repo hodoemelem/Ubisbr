@@ -1,0 +1,6 @@
+../Core/Src/Filter/Kalman.c:50:6:init_Kalman	24	static
+../Core/Src/Filter/Kalman.c:112:5:getAngle	24	static
+../Core/Src/Filter/Kalman.c:197:6:getAngle_R	24	static
+../Core/Src/Filter/Kalman.c:250:6:getAngle_P	24	static
+../Core/Src/Filter/Kalman.c:304:6:getAngle_Y	24	static
+../Core/Src/Filter/Kalman.c:336:6:setAngle	24	static

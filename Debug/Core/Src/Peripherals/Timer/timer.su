@@ -1,0 +1,10 @@
+../Core/Src/Peripherals/Timer/timer.c:33:6:timer_init	8	static
+../Core/Src/Peripherals/Timer/timer.c:57:6:motor_init	8	static
+../Core/Src/Peripherals/Timer/timer.c:83:6:encoder_init	8	static
+../Core/Src/Peripherals/Timer/timer.c:182:7:enc_counts	32	static
+../Core/Src/Peripherals/Timer/timer.c:278:6:restart_timer_dma	8	static
+../Core/Src/Peripherals/Timer/timer.c:325:6:sbr_gpio_init	8	static
+../Core/Src/Peripherals/Timer/timer.c:340:6:right_motor_cw	8	static
+../Core/Src/Peripherals/Timer/timer.c:363:7:turn_motors_off	64	static
+../Core/Src/Peripherals/Timer/timer.c:376:6:set_motors_pwm	24	static
+../Core/Src/Peripherals/Timer/timer.c:405:7:enc_val	40	static

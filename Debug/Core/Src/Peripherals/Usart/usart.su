@@ -1,0 +1,4 @@
+../Core/Src/Peripherals/Usart/usart.c:35:6:usart_init	8	static
+../Core/Src/Peripherals/Usart/usart.c:41:6:usart2_display_init	8	static
+../Core/Src/Peripherals/Usart/usart.c:70:6:usart1_radio_init	8	static
+../Core/Src/Peripherals/Usart/usart.c:102:6:usart1_radio_dma_restart	8	static

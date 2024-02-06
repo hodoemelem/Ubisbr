@@ -1,0 +1,8 @@
+../Core/Src/Control/controller.c:48:21:controller_create	8	static
+../Core/Src/Control/controller.c:57:6:controller_destory	16	static
+../Core/Src/Control/controller.c:63:12:controller_lunch_thread	24	static
+../Core/Src/Control/controller.c:78:13:controller_run	24	static
+../Core/Src/Control/controller.c:91:13:controller_process_data	136	static
+../Core/Src/Control/controller.c:133:15:motion	16	static
+../Core/Src/Control/controller.c:178:14:ctrl_output_data	16	static
+../Core/Src/Control/controller.c:183:13:controller_update_output_data	16	static

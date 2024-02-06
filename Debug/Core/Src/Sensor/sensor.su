@@ -1,0 +1,5 @@
+../Core/Src/Sensor/sensor.c:40:17:sensor_create	16	static
+../Core/Src/Sensor/sensor.c:50:6:sensor_destory	16	static
+../Core/Src/Sensor/sensor.c:56:13:sensor_param_init	16	static
+../Core/Src/Sensor/sensor.c:61:10:sensor_process_data_ex	64	static
+../Core/Src/Sensor/sensor.c:74:10:sensor_ouput_data	24	static

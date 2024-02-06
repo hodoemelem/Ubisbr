@@ -1,0 +1,5 @@
+../Core/Src/Telemetry/telemetry.c:42:12:telemetry_lunch_thread	16	static
+../Core/Src/Telemetry/telemetry.c:55:13:telemetry_run	32	static
+../Core/Src/Telemetry/telemetry.c:73:13:send	24	static
+../Core/Src/Telemetry/telemetry.c:79:13:telemetry_process_data	88	static
+../Core/Src/Telemetry/telemetry.c:94:13:telemetry_update_input_data	80	static

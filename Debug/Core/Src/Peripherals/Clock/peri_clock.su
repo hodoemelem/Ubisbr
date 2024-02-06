@@ -1,0 +1,4 @@
+../Core/Src/Peripherals/Clock/peri_clock.c:21:6:peri_clock_init	8	static
+../Core/Src/Peripherals/Clock/peri_clock.c:39:6:systick_delay_ms	24	static
+../Core/Src/Peripherals/Clock/peri_clock.c:54:6:systick_delay_us	24	static
+../Core/Src/Peripherals/Clock/peri_clock.c:135:6:HAL_TIM_PeriodElapsedCallback	16	static

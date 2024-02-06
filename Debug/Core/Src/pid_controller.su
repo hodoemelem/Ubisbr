@@ -1,0 +1,10 @@
+../Core/Src/pid_controller.c:74:6:pid_controller_init	16	static
+../Core/Src/pid_controller.c:106:7:pid_controller	120	static
+../Core/Src/pid_controller.c:177:6:motion_direction	32	static
+../Core/Src/pid_controller.c:255:14:pid_controller_angle	16	static
+../Core/Src/pid_controller.c:326:14:calc_pwm	16	static
+../Core/Src/pid_controller.c:331:14:limit_correction_angle	16	static
+../Core/Src/pid_controller.c:341:14:limit_correction	16	static
+../Core/Src/pid_controller.c:350:14:calc_integral	24	static
+../Core/Src/pid_controller.c:356:13:check_saturation	16	static
+../Core/Src/pid_controller.c:360:13:check_sign	16	static

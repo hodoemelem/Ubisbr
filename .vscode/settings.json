@@ -1,0 +1,23 @@
+{
+    "files.associations": {
+        "memory": "c",
+        "random": "c",
+        "usart_comm.h": "c",
+        "peri_clock.h": "c",
+        "i2c.h": "c",
+        "pid_controller.h": "c",
+        "controller.h": "c",
+        "main.h": "c",
+        "stdint.h": "c",
+        "atomic": "c",
+        "*.tcc": "c",
+        "cstdint": "c",
+        "ubi_def.h": "c",
+        "io.h": "c",
+        "filter.h": "c",
+        "sensor.h": "c",
+        "stm32l4xx_hal.h": "c",
+        "status_monitor.h": "c",
+        "timer.h": "c"
+    }
+}

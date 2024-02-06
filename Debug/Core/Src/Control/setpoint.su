@@ -1,0 +1,2 @@
+../Core/Src/Control/setpoint.c:33:14:map_ch_ref	24	static
+../Core/Src/Control/setpoint.c:38:12:update_setpoints	16	static
