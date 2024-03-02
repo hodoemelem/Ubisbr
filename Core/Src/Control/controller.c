@@ -14,10 +14,14 @@
  *  THE SOFTWARE.
  *******************************************************************************
  */
+
+/* ------- Standard includes ----------------------- */
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
 #include <stdbool.h>
+
+/* ------- Project Specific includes --------------- */
 #include "pid_controller.h"
 #include "controller.h"
 #include "controller_def.h"
@@ -28,23 +32,26 @@
 #include "imu.h"
 #include "stm32l4xx_hal.h"
 
-static enum control_states ctrl_state = controller_disabled;
 
+static enum control_states ctrl_state = controller_disabled;  /*< Short Description. */
 
+/* ------- Function Prototype ---------------------- */
 static void controller_run(void *const self_);
 static void controller_update_output_data(controller_t *const self);
 static void controller_process_data();
 static int8_t motion();
 
+
 QueueHandle_t controller_telemetry_q;
 TaskHandle_t controller_run_Handle;
 BaseType_t controller_run_return_Handle;
+
 static bool create_once = true;
 static bool lunch_once = true;
 static uint8_t tick_time = 3;
 static controller_t *self = NULL;
 
-// constructor and destructor ============================================
+/* ------- constructor and destructor --------------- */
 controller_t *const controller_create()
 {
     if (create_once)
@@ -59,27 +66,26 @@ void controller_destory(controller_t *self)
     free(self);
 }
 
-// Public members ========================================================
+/* ------------------ Public members ------------------ */
 BaseType_t controller_lunch_thread(controller_t *const self)
 {
     if (lunch_once)
     {
         controller_telemetry_q = xQueueCreate(QUEUE_LENGTH, sizeof(controller_t));
-        controller_run_return_Handle = xTaskCreate(controller_run, "Controller Activity Task",
-                                                   STACK_SIZE,
-                                                   (void *)self, CONTROLLER_PRIORITY, &controller_run_Handle);
+        controller_run_return_Handle = xTaskCreate(controller_run, "Controller Activity Task",                           /*< Short Description. */
+                                                   STACK_SIZE,                                                           /*< Short Description. */
+                                                   (void *)self, CONTROLLER_PRIORITY, &controller_run_Handle);           /*< Short Description. */
         lunch_once = false;
     }
     return controller_run_return_Handle;
 }
 
-// Private members =======================================================
-
+/* ------------------ Private members ------------------ */
 static void controller_run(void *const self_)
 {
     TickType_t xLastWakeTime;
     // Initialize the xLastWakeTime variable with the current time.
-    xLastWakeTime = xTaskGetTickCount();
+    xLastWakeTime = xTaskGetTickCount(); 
 
     while (true)
     {
@@ -100,28 +106,31 @@ static void controller_process_data()
     switch (ctrl_state)
     {
     case first_start_stage:
-        if (channels[CH_SWA] > CH_MID) // radio SWD  to activate  system
+        if (channels[CH_SWA] > CH_MID) 
         {
+            /* radio SWD  to activate  system (Comment: Add what the if condition should do inside the scope) */
             pid_controller_init(tick_time * 0.001);
             self->pwm_data = turn_motors_off();
             ctrl_state = controller_enabled;
         }
         break;
+
     case controller_enabled:
         if ((channels[CH_SWA] < CH_MID))
         {
             ctrl_state = controller_disabled;
             break;
         }
-
         self->pwm_data = pid_controller(self->setpoint_data, self->filter_data, motion());
         set_motors_pwm(self->pwm_data);
         break;
+
     case controller_disabled:
         self->pwm_data = turn_motors_off();
         pid_controller_init(tick_time * 0.001);
         ctrl_state = first_start_stage;
         break;
+
     default:
         break;
     }

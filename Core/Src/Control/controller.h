@@ -16,6 +16,8 @@
  */
 #ifndef CONTROLLER_H
 #define CONTROLLER_H
+
+/* ------- Project Specific includes ------- */
 #include "filter.h"
 #include "ubi_def.h"
 #include "timer.h"
@@ -29,10 +31,36 @@ typedef struct controller
     filter_t filter_data;
 } controller_t;
 
-
+/** @brief 
+ *
+ * 
+ *  @param 
+ *  @return 
+ */
 controller_t *const controller_create();
+
+/** @brief 
+ *
+ * 
+ *  @param 
+ *  @return 
+ */
 void controller_destory(controller_t *self);
+
+/** @brief 
+ *
+ * 
+ *  @param 
+ *  @return 
+ */
 controller_t ctrl_output_data();
+
+/** @brief 
+ *
+ * 
+ *  @param 
+ *  @return 
+ */
 BaseType_t controller_lunch_thread(controller_t *const self);
 
 #endif // CONTROLLER_H
